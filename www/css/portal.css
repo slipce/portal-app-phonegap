@@ -1,0 +1,198 @@
+﻿/*CSS para personalização e FIX do bootstrap*/
+/*Oculta navegação original do webgrid*/
+.fix-webgrid-pagination tfoot
+{
+    display: none;
+}
+
+/*ADAPTAÇÕES GERAIS TEMPORARIAS*/
+/*barra superior*/
+.navbar-default
+{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    background:linear-gradient(#fafafa, #eaeaea) repeat scroll 0 0 transparent !important;
+    border-bottom:1px solid #e0e0e0;
+}
+body
+{
+    background-color: #FCFCFC !important;
+        /*background-color: #F7F7F7 !important;*/
+}
+/*menu lateral*/
+#nav-lateral .nav > li > a
+{
+    border: 1px solid #e0e0e0;    
+}
+
+#nav-lateral .nav > li
+{
+    background-color: #ffffff;
+}
+
+.panel
+{
+    background-color:transparent;
+}
+
+#nav-lateral .nav > li > a
+{
+    padding:15px !important;
+    /*box-shadow:1px 1px 2px #ccc;*/
+}
+
+#nav-lateral .navbar-collapse
+{
+    max-height:600px;
+}
+
+/*botões*/
+
+.btn-default
+{
+    /*text-shadow:1px 0px 2px #9B9B9B;*/
+    box-shadow:1px 1px 2px #BFBFBF;
+    color:#666;
+}
+
+.btn-primary
+{
+    text-shadow:1px 0px 2px #184559;
+    box-shadow:1px 1px 2px #184559;
+}
+.btn-warning
+{
+    text-shadow: 1px 0px 2px #8C5C19;
+    box-shadow: 1px 1px 2px #8C5C19;
+}
+
+/*tabela*/
+.table
+{
+    color: #496977;
+}
+
+/*.table > thead > tr > th, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > tbody > tr > td, 
+.table > tfoot > tr > td */
+    .table > tbody > tr > td
+    {
+        font-size:12px;
+        padding:5px;
+    }
+
+.well
+{
+    background-color:#EAEAEA;
+    box-shadow:0 0 5px #c0c0be;
+}
+
+.breadcrumb
+{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+
+.panel-default > .panel-heading
+{
+    background: linear-gradient(#fafafa, #eaeaea) repeat scroll 0 0 transparent !important;
+}
+/*ADAPTAÇÕES GERAIS TEMPORARIAS*/
+
+/*Adapta menu Logado para funcionar da forma correta em celulares e computadores*/
+.navbar-nav 
+{
+    float:right !important;
+}
+
+@media (max-width: 768px)
+{
+    .navbar-nav 
+    {
+        float:none !important;
+    }
+}
+
+
+/*fix para que o Html.ValidationSummary não apareça vazio quando o parâmetro
+ excludePropertyErrors está como false*/
+.validation-summary-valid
+{
+    display:none;
+}
+/********************/
+
+#carousel-home
+{
+    margin-bottom:20px;
+}
+
+
+/* Deixa o collapse do menu lateral ativo (esconde o menu), enquanto a tela for menor que 992px */
+@media (max-width: 992px) 
+{
+    #nav-lateral .navbar-header {
+        float: none;
+    }    
+    #nav-lateral   .navbar-toggle {
+        display: block;
+    }
+    #nav-lateral .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    #nav-lateral .navbar-collapse.collapse {
+        display: none!important;
+    }
+    #nav-lateral .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    #nav-lateral .navbar-nav>li {
+        float: none;
+    }
+    #nav-lateral .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/*Diminui padding do menu para caber textos maiores(solicitação de documentos estava quebrando a linha)*/
+#nav-lateral .nav > li > a {
+    padding: 10px 10px;    
+}
+/*#menu-home
+{
+    display: table-header-group;
+    padding-left:10px;
+    padding-right:10px;
+    
+}
+
+
+.col-lg-3
+{
+    display: table-footer-group;
+    padding-left:10px;
+    padding-right:10px;
+    
+}*/
+
+/*Redimensiona o tamanho do modal-padrao*/
+@media (min-width: 970px) 
+{
+    .modal-lg
+    {
+        width:85%;
+    }
+}
+
+@media (max-width: 1170px) 
+{
+    .modal-lg
+    {
+        width:96%;
+    }
+}

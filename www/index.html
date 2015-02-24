@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />        
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />				
+		<link rel="stylesheet" type="text/css" href="css/portal.css" />	
+        <title>Hello World</title>
+    </head>
+    <body>
+<body>
+    
+
+
+<header>
+    <nav role="navigation" class="navbar navbar-default">      
+        <div class="navbar-header">
+           <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>        
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>-->
+            <!--<button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">                
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                                 
+            </button>-->
+            <a href="#" class="navbar-brand">
+                <img class="img-responsive" alt="Centro Universitário da FEI" src="img/logo-fei.png">            
+            </a>
+        </div>
+        <div class="navbar-collapse">
+            
+        </div>
+    </nav>  
+</header>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            
+
+        </div>
+    </div>
+    <div class="row">  
+        <div class="col-lg-12">      
+            
+
+<!--Includes especificos da página-->
+
+   
+
+<form role="form" method="post" class="col-md-3" action="/secureserver/portal/">    <h2 class="form-signin-heading">Login</h2>
+	<div class="form-group">
+        <input type="text" value="" style="font-style:italic;" placeholder="Usuário" name="Usuario" id="Usuario" data-val-required="O campo Usuário deve ser preenchido." data-val="true" class="form-control">         
+        <span data-valmsg-replace="true" data-valmsg-for="Usuario" class="field-validation-valid"></span>
+    </div>
+	<div class="form-group">
+	    <input type="password" style="font-style:italic;" placeholder="Senha" name="Senha" id="Senha" data-val-required="O campo Senha deve ser preenchido." data-val="true" class="form-control">    
+	    <span data-valmsg-replace="true" data-valmsg-for="Senha" class="field-validation-valid"></span>            	        
+    </div>
+    <div class="form-group">
+	    <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
+    </div>    
+<a href="/secureserver/portal/admin/cci/contas/recuperar">Esqueci minha senha</a></form>
+    
+        </div>
+    </div>
+</div>
+
+<hr>
+<footer>
+    <div style="padding:15px;" class="container">        
+        <small style="font-size:11px;">2015 - Centro universitário da FEI - Todos os direitos reservados</small>        
+    </div>
+</footer>
+
+        
+    <!-- Modal -->
+<div aria-hidden="true" aria-labelledby="modal-padrao-label" role="dialog" tabindex="-1" id="modal-padrao" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 id="modal-padrao-label" class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button data-dismiss="modal" class="btn btn-default" type="button">Close</button>
+        <button class="btn btn-primary" type="button">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="/secureserver/portal/js/respond?v=CmN4w8eljNRRVgvSZRVfj5b6xhowQYhq6lQ-pwLZdy81"></script>
+
+    </body>
+</html>

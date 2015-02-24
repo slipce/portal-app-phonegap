@@ -1,0 +1,172 @@
+﻿.cor_todos
+{
+    text-shadow: 2px 1px 0px #AD7E1A;
+    background-color: orange;
+     box-shadow:3px 3px 4px #AD7E1A;
+}
+
+.cor_tesouraria
+{
+    text-shadow: 2px 1px 0px #3F124F;
+    background-color: purple;
+     box-shadow:3px 3px 4px #3F124F;
+}
+
+.cor_secretaria
+{
+    text-shadow: 2px 1px 0px #226351;
+	background-color: #48BF93; /*green;*/    
+    box-shadow:3px 3px 4px #226351;
+}
+
+.cor_cci
+{
+    text-shadow: 2px 1px 0px #5E1C21;
+    background-color: brown;
+    box-shadow:3px 3px 4px #5E1C21;
+}
+
+#nav-home li
+{
+    width: 50%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) 
+{
+    #nav-home li
+    {
+        width: 33.33%; /*25%;*/        
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) 
+{ 
+    #nav-home li
+    {
+        width: 16.66%;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) 
+{ 
+    #nav-home li
+    {
+        width: 16.66%;
+    }
+}
+
+#nav-home
+{
+    background-color: transparent;
+    list-style-type: none;
+    display: table;
+    padding: 0;
+    /*margin-top: 100px;*/
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}	
+
+    #nav-home li
+    {
+        float: left;			        
+        height: 120px;
+        padding: 2px;            
+    }
+
+    /*#nav-home li:hover
+    {
+        transition: height, 0.5s;
+        height: 140px;
+    }*/
+    
+        #nav-home a
+        {	
+            transition: color, .5s;
+            transition: background-color, .5s;   
+            /*para o safari*/
+            -webkit-transition: color, .5s;
+            -webkit-transition: background-color, .5s;		
+            /*para o ópera*/
+            -o-transition: color, .5s;
+            -o-transition: background-color, .5s;	
+            display: inline-block;
+            width: 100%;
+            height:100%;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 5px 5px 5px;
+            /*background-color: #eeeeee;*/
+            /*border-radius:4px;*/            
+            
+        }
+
+        #nav-home a:hover
+        {	            
+            transition: color, .9s;
+            transition: background-color, .9s;                        
+            color: white;
+            background-color: #2D87AF;
+            /*box-shadow:0px 0px 7px #A5E4FF;*/
+            text-shadow:0px 0px 5px #FFFFFF;		
+            box-shadow:3px 3px 3px #174154;
+            /*box-shadow:2px 2px 2px white inset;		
+            transition: box-shadow, .7s;
+            transition: rotate, .4s;
+            transform:rotate(4deg);
+            -webkit-transform:rotate(10deg);*/
+           
+        }
+
+            #nav-home a:focus
+            {
+                text-shadow:0px 0px 10px #FFFFFF;
+            }
+
+            #nav-home span,
+            #nav-home em
+            {
+                display: block;		
+                margin-left: auto;
+                margin-right: auto;               
+            }	
+
+            #nav-home em
+            {
+                margin-top: 15px;
+                padding-bottom: 10px;
+                font-weight:bold;
+            }	
+
+
+            /*#nav-home li:hover em
+            {
+                transition: margin-top, 0.5s;
+                margin-top: 40px;
+            }*/	
+    
+            #nav-home .glyphicon            
+            {
+                /*border-radius: 12px;*/
+                font-size: 24px;
+                /*box-shadow: 0 0 0 20px rgba(255, 255, 255, 0)*/
+            }
+            
+            /*Font-size maior para ficar com o mesmo tamanho do glyphicon*/
+            #nav-home .fa
+            {
+                /*border-radius: 12px;*/
+                font-size: 28px;
+                /*box-shadow: 0 0 0 20px rgba(255, 255, 255, 0)*/
+                width:1em;
+            }
+            /*#nav-home a:hover .glyphicon
+            {
+                transition: box-shadow, 0.5s;
+                font-size: 24px;
+                box-shadow: 0 0 0 0px rgba(255, 255, 255, .4)
+            }*/
